@@ -1,10 +1,12 @@
 package model.entity;
 
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.Date;
 
 @Getter
 @Setter
@@ -12,6 +14,13 @@ import lombok.Setter;
 @NoArgsConstructor
 
 @Entity
-
+@Table(name = "Orders")
 public class Order {
+    @Id
+    @GeneratedValue
+    private Long orderId;
+    private Date date;
+
+    @ManyToOne
+    private Customer customer;
 }

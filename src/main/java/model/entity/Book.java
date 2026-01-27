@@ -26,6 +26,6 @@ public class Book {
     private BigDecimal price;
     private int stock;
 
-    @OneToMany
+    @ManyToOne
     private Author author;
 }
