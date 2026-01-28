@@ -1,6 +1,5 @@
-package model.entity;
+package model.dto;
 
-import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,8 +9,9 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-
-@Entity
-
-public class OrderDetails {
+public class OrderDetailDTO {
+    private Long id;
+    private String isbn;
+    private String title;
+    private int qty;
 }

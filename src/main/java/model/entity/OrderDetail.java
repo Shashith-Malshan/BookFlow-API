@@ -6,21 +6,24 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Date;
-
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 
 @Entity
-@Table(name = "Orders")
-public class Order {
+@Table(name = "OrderDetails")
+public class OrderDetail {
     @Id
     @GeneratedValue
     private Long id;
-    private Date date;
+
+    private int qty;
+
+    @OneToMany
+    private Book book;
 
     @ManyToOne
-    private Customer customer;
+    private Order order;
+
 }

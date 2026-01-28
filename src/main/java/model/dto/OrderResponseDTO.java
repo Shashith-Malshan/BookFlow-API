@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import model.entity.OrderDetails;
+import model.entity.OrderDetail;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -18,7 +18,7 @@ public class OrderResponseDTO {
     private Date date;
     private Long customerId;
 
-    private ArrayList<OrderDetails> orderDetails=new ArrayList<>();
+    private ArrayList<OrderDetailDTO> orderDetails=new ArrayList<>();
 
 
 }
