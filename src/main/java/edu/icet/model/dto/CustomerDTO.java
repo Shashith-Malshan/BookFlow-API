@@ -1,4 +1,4 @@
-package model.dto;
+package edu.icet.model.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,9 +9,10 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class OrderDetailDTO {
+public class CustomerDTO {
     private Long id;
-    private String isbn;
-    private String title;
-    private int qty;
+    private String name;
+    private String email;
+    private String city;
+
 }

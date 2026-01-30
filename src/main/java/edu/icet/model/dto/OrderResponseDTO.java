@@ -1,10 +1,9 @@
-package model.dto;
+package edu.icet.model.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import model.entity.OrderDetail;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -13,9 +12,12 @@ import java.util.Date;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class PlaceOrderRequestDTO {
+public class OrderResponseDTO {
+    private Long orderId;
     private Date date;
     private Long customerId;
 
     private ArrayList<OrderDetailDTO> orderDetails=new ArrayList<>();
+
+
 }

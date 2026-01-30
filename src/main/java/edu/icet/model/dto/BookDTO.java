@@ -1,10 +1,10 @@
-package model.entity;
+package edu.icet.model.dto;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import edu.icet.model.entity.Genre;
 
 import java.math.BigDecimal;
 
@@ -12,20 +12,13 @@ import java.math.BigDecimal;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+public class BookDTO {
 
-@Entity
-@Table(name = "Books")
-public class Book {
-
-    @Id
     private String isbn;
     private String title;
-
-    @Enumerated(EnumType.STRING)
     private Genre genre;
     private BigDecimal price;
     private int stock;
 
-    @ManyToOne
-    private Author author;
+    private Long authorId;
 }

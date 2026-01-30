@@ -1,4 +1,4 @@
-package model.entity;
+package edu.icet.model.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -16,11 +16,13 @@ import lombok.Setter;
 
 @Entity
 
-@Table(name = "Authors")
-public class Author {
+@Table(name = "Customers")
+public class Customer {
     @Id
     @GeneratedValue
     private Long id;
     private String name;
-    private String country;
+    private String email;
+    private String city;
+
 }
