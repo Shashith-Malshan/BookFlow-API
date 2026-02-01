@@ -10,5 +10,5 @@ import java.util.Optional;
 public interface AuthorService {
     void save(AuthorDTO authorDTO);
 
-    Optional<Author> findById(Long id);
+    AuthorDTO findById(Long id);
 }

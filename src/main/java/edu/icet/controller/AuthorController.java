@@ -21,7 +21,7 @@ public class AuthorController {
     }
     
     @GetMapping("{id}")
-    public Optional<Author> getAuthor(Long id){
+    public AuthorDTO getAuthor(@PathVariable Long id){
         return authorService.findById(id);
     }
 
