@@ -19,6 +19,5 @@ public class BookDTO {
     private Genre genre;
     private BigDecimal price;
     private int stock;
-
     private Long authorId;
 }

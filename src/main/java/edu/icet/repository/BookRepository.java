@@ -1,4 +1,7 @@
 package edu.icet.repository;
 
-public interface BookRepository {
+import edu.icet.model.entity.Book;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface BookRepository extends JpaRepository<Book,String> {
 }
