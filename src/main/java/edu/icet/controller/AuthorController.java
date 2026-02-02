@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RequiredArgsConstructor
 @RestController
-@RequestMapping("authorInfo")
+@RequestMapping("author-info")
 public class AuthorController {
 
     final AuthorService authorService;

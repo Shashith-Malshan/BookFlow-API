@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("bookInfo")
+@RequestMapping("book-info")
 @RequiredArgsConstructor
 public class BookController {
     final BookService bookService;
