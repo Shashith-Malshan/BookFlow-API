@@ -13,6 +13,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class PlaceOrderRequestDTO {
+    private Long orderId;
     private Date date;
     private Long customerId;
 

@@ -32,7 +32,6 @@ public class AuthorServiceImpl implements AuthorService {
     @Override
     public void save(AuthorDTO authorDTO) {
         authorRepository.save(toEntity(authorDTO));
-
     }
 
     @Override
